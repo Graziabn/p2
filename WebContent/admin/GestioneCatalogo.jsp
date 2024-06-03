@@ -6,7 +6,7 @@
 	if(products == null) {
 		response.sendRedirect("../catalogo?action=admin");	
 		return;
-	}
+	  }
 %>
 
 <!DOCTYPE html>
@@ -63,7 +63,7 @@
 		<div class="center">
 			<a href="AddProdotto.jsp"><button>Aggiungi prodotto</button></a>
 		</div>
-		
+		 
 	</div>
 	
 		<%@ include file="../fragments/footer.jsp" %>

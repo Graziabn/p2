@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="it.unisa.model.ProdottoBean, java.util.*"%>
+    pageEncoding="UTF-8" import="it.unisa.model.ProdottoBean, java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +23,7 @@
 	for(ProdottoBean prodotto : prodotti){
 		if(prodotto.getIdProdotto() == id){
 			bean = prodotto;} 
-			}%>
+			}%> 
 	
 	<form action="../catalogo" method="post" id="myform">
 		<input type="hidden" name="action" value="modifica">
@@ -53,8 +53,8 @@
 			<p><input type="text" name="dataUscita" value="<%=bean.getDataUscita() %>" required></p>
 		</div>
 		<div class="tableRow">
-			<p>Quantit‡:</p>
-			<p><input type="number" name="quantit‡" value="<%=bean.getQuantit‡() %>" required></p>
+			<p>Quantit√†:</p>
+			<p><input type="number" name="quantit√†" value="<%=bean.getQuantit√†() %>" required></p>
 		</div>
 		<div class="tableRow">
 			<p>Immagine:</p>
